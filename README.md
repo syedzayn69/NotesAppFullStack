@@ -1,7 +1,7 @@
 # NotesAppFullstack
 An express(CRUD) application built with MERN stack, can be used to take notes, sort them by importance... 
 
-#NoteApp Credentias
+#NoteApp Credentials 
 
 username: Syed123
 
