@@ -1,0 +1,28 @@
+# fly.toml app configuration file generated for falling-sky-8274 on 2023-09-07T21:55:28+05:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "falling-sky-8274"
+primary_region = "ams"
+
+[experimental]
+  auto_rollback = true
+
+[build]
+
+[env]
+  PORT = "3000"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+[[services]]
+  protocol = ""
+  internal_port = 3000
+  processes = ["app"]
